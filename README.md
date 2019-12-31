@@ -74,11 +74,9 @@ The training phase using the genetic algorithm is paralellized in two ways
 
 #### Pseudo parallelization:
 
-A very effective way of reducing training time is by adding multipile agents to an environment (instead of juste one)
+A very effective way of reducing training time is by adding multiple agents to an environment (instead of juste one)
 
-Taking the example of a mono-process training, there is only one environment in which we can make agents play the game
-
-If we put multiple agents in this environment it helps since they're all playing at the same time, the Game class handles the distribution of multiple neural networks to agents in an environment
+Having multiple agents helps since they're all playing at the same time, the Game class handles the distribution of multiple neural networks to agents in an environment
 
 <p align="center">
   <img src="./img/pseudo_parallelization.png">
