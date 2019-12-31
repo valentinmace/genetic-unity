@@ -100,7 +100,7 @@ Since all created child process start their own environment at evaluation time, 
   <img src="./img/multi_process_parallelization.png">
 </p>
 
-The break even point between single and multi process is clear in the previous plot, it might be specific to the 3DBall example or hyperparameters of the genetic algorithm but we observe a clear linear relation between the average fitness of the population and the duration of a generation
+The break even point between single and multi process is clear in the previous plot, it might be specific to the 3DBall example but we observe a clear linear relation between the average fitness of the population and the duration of a generation
 
 ## Meta
 
