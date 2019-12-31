@@ -72,19 +72,33 @@ python run_trained_agent.py
 
 The training phase using the genetic algorithm is paralellized in two ways
 
-#### Pseudo-parallelization:
+#### Pseudo parallelization:
 
-A very effective way of reducing training time is by adding multipile agents to an environment (instead of juste one)
+A very effective way of reducing training time is by adding multiple agents to an environment (instead of juste one)
 
-Taking the example of a mono-process training, there is only one environment in which we can make agents play the game
-
-If we put multiple agents in this environment it helps since they're all playing at the same time, the Game class handles the distribution of multiple neural networks to agents in an environment
+Having multiple agents helps since they're all playing at the same time, the Game class handles the distribution of multiple neural networks to agents in an environment
 
 <p align="center">
   <img src="./img/pseudo_parallelization.png">
 </p>
 
+By training in an environment with 12 agents, training was sped up by a factor of 3 compared to a single-agent environment
 
+#### Multi-process parallelization:
+
+The most time-consuming part of the genetic algorithm is the evaluation phase, in which all neural networks play multiple games to report their performances
+
+For a first step into multi-process parallelization I implemented an option to divide all neural networks across multiple process and run the evaluation faster
+
+All created process have their own UnityEnvironment, which is a source of technical difficulties
+
+Since all created child process start their own environment at evaluation time, the evaluation process is actually slower in the first generations of the genetic algorithm, but as the training advances and agents get good, their game last longer and the multi-process evaluation takes advantage
+
+<p align="center">
+  <img src="./img/multi_process_parallelization.png">
+</p>
+
+The break even point between single and multi process is clear in the previous plot, it might be specific to the 3DBall example but we observe a clear linear relation between the average fitness of the population and the duration of a generation
 
 ## Meta
 
