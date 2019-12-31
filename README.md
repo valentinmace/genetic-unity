@@ -2,7 +2,7 @@
 >A framework to train agents in a Unity environment using a genetic algorithm
 
 <p align="center">
-  <img src="./animation.gif">
+  <img src="img/main_animation.gif">
 </p>
 
 The project is still in a very early phase, developped and tested only on Windows for the moment
