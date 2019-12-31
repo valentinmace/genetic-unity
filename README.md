@@ -78,7 +78,7 @@ A very effective way of reducing training time is by adding multipile agents to 
 
 Taking the example of a mono-process training, there is only one environment in which we can make agents play the game
 
-If we put multiple agents in this environment it helps since they're all playing at the same time, the game class handles the distribution of multiple neural networks to agents in an environment
+If we put multiple agents in this environment it helps since they're all playing at the same time, the Game class handles the distribution of multiple neural networks to agents in an environment
 
 
 
