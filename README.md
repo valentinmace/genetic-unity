@@ -94,7 +94,7 @@ For a first step into multi-process parallelization I implemented an option to d
 
 All created process have their own UnityEnvironment, which is a source of technical difficulties
 
-Since all created child process start their own environment at evaluation time, the evaluation process is actually slower in the first generations of the genetic algorithm, but as the training advances and agents get good, their game last longer and the multi-process evaluation shows increased performance
+Since all created child process start their own environment at evaluation time, the evaluation process is actually slower in the first generations of the genetic algorithm, but as the training advances and agents get good, their game last longer and the multi-process evaluation takes advantage
 
 <p align="center">
   <img src="./img/multi_process_parallelization.png">
