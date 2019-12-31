@@ -34,5 +34,5 @@ if __name__ == '__main__':
     Use multiprocessing.cpu_count() to count available cores
     """
     gen = GeneticAlgorithm(unity_env_name=multiple_agents_env_name, networks_shape=[8,16,2], population_size=100,
-                           crossover_method='neuron', mutation_method='weight', n_process=4)
+                           crossover_method='neuron', mutation_method='weight', n_process=1)
     gen.start()
