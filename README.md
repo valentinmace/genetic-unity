@@ -80,6 +80,10 @@ Taking the example of a mono-process training, there is only one environment in 
 
 If we put multiple agents in this environment it helps since they're all playing at the same time, the Game class handles the distribution of multiple neural networks to agents in an environment
 
+<p align="center">
+  <img src="./img/pseudo_parallelization.png">
+</p>
+
 
 
 ## Meta
