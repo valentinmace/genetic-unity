@@ -41,7 +41,7 @@ class NeuralNetwork:
         """
         Main function, takes an input vector and calculate the output by propagation through the network
 
-        :param a: column of integers, inputs for the network (snake's vision)
+        :param a: column of integers, inputs for the network
         :return: column of integers, output neurons activation
         """
         weights = self.weights
