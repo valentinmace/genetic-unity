@@ -24,8 +24,8 @@ if __name__ == '__main__':
     I've built two environments for this example:
     The first has only one agent and the second has multiple agents
     """
-    single_agent_env_name = "./examples/builds/3DBall/single_agent/ball.exe"
-    multiple_agents_env_name = "./examples/builds/3DBall/multiple_agents/ball.exe"
+    single_agent_env_name = "./examples/builds/3DBall/single_agent/linux/ball.exe"
+    multiple_agents_env_name = "./examples/builds/3DBall/multiple_agents/linux/ball.exe"
 
 
     """
