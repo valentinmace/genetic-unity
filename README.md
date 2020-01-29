@@ -33,7 +33,7 @@ Libraries you'll need to run the project:
 
 Install mlagents-envs:
 ```sh
-cd ml-agents/ml-agents-envs
+cd ml-agents-envs
 pip install ./
 ```
 
